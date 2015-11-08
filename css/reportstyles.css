@@ -54,10 +54,11 @@ nav:not(.mm-menu)
 .header,
 .footer
 {
-	background: #7f003f;
+	background: #1f060e;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
-	color: #fff;
+	color: #f83067;
 	line-height: 40px;
 
 
