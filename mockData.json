@@ -1,0 +1,310 @@
+var mockData = [
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.911899,
+      "longitude": -105.113005
+    },
+    "report": {
+      "headline": "Cars circling area",
+      "content": "So this happened at y."
+    }
+  },
+  {
+    "complaint": "sex",
+    "location": {
+      "latitude": 39.836449, 
+      "longitude": -104.916507
+    },
+    "report": {
+      "headline": "Drug exchange",
+      "content": "So this happened at x."
+    }
+  },
+  {
+    "complaint": "sex",
+    "location": {
+      "latitude": 39.823794, 
+      "longitude": -104.926120
+    },
+    "report": {
+      "headline": "Gathering of gang members",
+      "content": "So this happened at y."
+    }
+  },
+  {
+    "complaint": "gang",
+    "location": {
+      "latitude": 39.734395, 
+      "longitude": -105.089272
+    },
+    "report": {
+      "headline": "Drug exchange",
+      "content": "So this happened at z."
+    }
+  },
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.910028,
+      "longitude": -105.093271
+    },
+    "report": {
+      "headline": "Women walking aimlessly",
+      "content": "So this happened at z."
+    }
+  },
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.864917,
+      "longitude": -104.978010
+    },
+    "report": {
+      "headline": "Cars circling area",
+      "content": "So this happened at z."
+    }
+  },
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.739177,
+      "longitude": -104.93472
+    },
+    "report": {
+      "headline": "Drug exchange",
+      "content": "So this happened at y."
+    }
+  },
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.834334, 
+      "longitude": -104.956970
+    },
+    "report": {
+      "headline": "Drug exchange",
+      "content": "So this happened at z."
+    }
+  },
+  {
+    "complaint": "gang",
+    "location": {
+      "latitude": 39.731491, 
+      "longitude": -105.004814
+    },
+    "report": {
+      "headline": "Drug exchange",
+      "content": "So this happened at f."
+    }
+  },
+  {
+    "complaint": "gang",
+    "location": {
+      "latitude": 39.712874, 
+      "longitude": -104.975975
+    },
+    "report": {
+      "headline": "Gathering of gang members",
+      "content": "So this happened at x."
+    }
+  },
+  {
+    "complaint": "sex",
+    "location": {
+      "latitude": 39.644087, 
+      "longitude": -104.990731
+    },
+    "report": {
+      "headline": "Cars circling area",
+      "content": "So this happened at f."
+    }
+  },
+  {
+    "complaint": "gang",
+    "location": {
+      "latitude": 39.796964, 
+      "longitude": -105.011780
+    },
+    "report": {
+      "headline": "Women walking aimlessly",
+      "content": "So this happened at x."
+    }
+  },
+  {
+    "complaint": "sex",
+    "location": {
+      "latitude": 39.750980, 
+      "longitude": -105.065166
+    },
+    "report": {
+      "headline": "Cars circling area",
+      "content": "So this happened at f."
+    }
+  },
+  {
+    "complaint": "gang",
+    "location": {
+      "latitude": 39.614992, 
+      "longitude": -104.863792
+    },
+    "report": {
+      "headline": "Women walking aimlessly",
+      "content": "So this happened at x."
+    }
+  },
+  {
+    "complaint": "drug",
+    "location": {
+      "latitude": 39.739354,
+      "longitude": -104.93364
+    },
+    "report": {
+      "headline": "Drug exchange",
+      "content": "So this happened at y."
+    }
+  },
+  {
+    "complaint": "drug",
+    "location": {
+      "latitude": 39.739187,
+      "longitude": -104.96192
+    },
+    "report": {
+      "headline": "Women walking aimlessly",
+      "content": "So this happened at f."
+    }
+  },
+  {
+    "complaint": "sex",
+    "location": {
+      "latitude": 39.719740, 
+      "longitude": -104.952458
+    },
+    "report": {
+      "headline": "Gathering of gang members",
+      "content": "So this happened at z."
+    }
+  },
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.597416, 
+      "longitude": -105.040397
+    },
+    "report": {
+      "headline": "Cars circling area",
+      "content": "So this happened at f."
+    }
+  },
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.583260, 
+      "longitude": -105.055849
+    },
+    "report": {
+      "headline": "Cars circling area",
+      "content": "So this happened at f."
+    }
+  },
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.581805, 
+      "longitude": -105.050185
+    },
+    "report": {
+      "headline": "Cars circling area",
+      "content": "So this happened at f."
+    }
+  },
+  {
+    "complaint": "drug",
+    "location": {
+      "latitude": 39.739389,
+      "longitude": -104.88909
+    },
+    "report": {
+      "headline": "Drug exchange",
+      "content": "So this happened at z."
+    }
+  },
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.598078, 
+      "longitude": -105.035076
+    },
+    "report": {
+      "headline": "Cars circling area",
+      "content": "So this happened at f."
+    }
+  },
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.756825, 
+      "longitude": -104.985074
+    },
+    "report": {
+      "headline": "Women walking aimlessly",
+      "content": "So this happened at z."
+    }
+  },
+  {
+    "complaint": "violence",
+    "location": {
+      "latitude": 39.751943, 
+      "longitude": -104.996232
+    },
+    "report": {
+      "headline": "Cars circling area",
+      "content": "So this happened at f."
+    }
+  },
+   {
+    "complaint": "drug",
+    "location": {
+      "latitude": 39.662008, 
+      "longitude": -104.795658
+    },
+    "report": {
+      "headline": "Drug exchange",
+      "content": "So this happened at z."
+    }
+  },
+  {
+    "complaint": "sex",
+    "location": {
+      "latitude": 39.739534,
+      "longitude": -104.95987
+    },
+    "report": {
+      "headline": "Drug exchange",
+      "content": "So this happened at x."
+    }
+  },
+  {
+    "complaint": "drug",
+    "location": {
+      "latitude": 39.739251,
+      "longitude": -104.87334
+    },
+    "report": {
+      "headline": "Cars circling area",
+      "content": "So this happened at x."
+    }
+  },
+  {
+    "complaint": "sex",
+    "location": {
+      "latitude": 39.722777, 
+      "longitude": -104.948166
+    },
+    "report": {
+      "headline": "Drug exchange",
+      "content": "So this happened at y."
+    }
+  }
+]

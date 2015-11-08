@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="www.frebsite.nl" />
+	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+	
+	<title>Lifeline</title>
+	
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link type="text/css" rel="stylesheet" href="slidemenu/dist/core/css/jquery.mmenu.css" />
+	<link type="text/css" rel="stylesheet" href="slidemenu/dist/addons/css/jquery.mmenu.dragopen.css" />
+	<link href="css/styles.css" rel="stylesheet">
+
+</head>
+	
+<body>
+	<div id="page">
+		<div class="header Fixed">
+			<a href="#menu"></a>
+			Lifeline
+		</div>
+		<div class="content" id="content">
+			<div id="map-canvas"></div>
+			<div id="legend">
+				<li id="greenColor">Drug</li>
+				<li id="yellowColor">Gnag</li>
+				<li id="pinkColor">Sex</li>
+				<li id="purpleColor">Violence</li>
+			</div>
+		</div>
+		<div class="footer Fixed"></div>
+		<nav id="menu">
+			<ul>
+				<li>
+					<h2>Find issues in your community.</h2>
+					<form method="get" id="findIssues">
+						<div class="clear"></div>
+						<button type="button" id="findButton">Find</button>
+						<div class="findIssuesFilter">
+							<input type="checkbox" id="drugChoice"/>Drug<br />
+							<input type="checkbox" id="gangChoice"/>Gang<br />
+							<input type="checkbox" id="sexChoice"/>Sex<br />
+							<input type="checkbox" id="violenceChoice"/>Violence<br />
+							<div class="clear"></div>
+							<input id="submitFind" type="button" value="Search">
+							<div class="clear"></div>
+						</div>
+					</form>
+				</li>
+				<li>
+					<h2>Report issues in your community.</h2>
+					<div class="clear"></div>
+					<form>
+						<button formaction="http://localhost/LifelineApp/report.html">Report</button>
+					</form>
+				</li>
+				<li><a href="http://localhost/LifelineApp/about.html">About</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="slidemenu/dist/core/js/jquery.mmenu.min.js"></script>
+	<script type="text/javascript" src="slidemenu/dist/addons/js/jquery.mmenu.dragopen.min.js"></script>
+	<script type="text/javascript" src="slidemenu/dist/addons/js/jquery.mmenu.fixedelements.min.js"></script>
+	<!-- Google Maps, Places, and Visualization API -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXNd53zmsiIIqVPVQbMEM4p0nU1qNsc3Y&libraries=places,visualization"></script>
+	<!-- Own js file -->
+	<script type="text/javascript" src="js/slidemenu.js"></script>
+	<script type="text/javascript" src="mockData.json"></script>
+	<script type="text/javascript" src="js/map.js"></script>  
+</body>
+  
+</html>

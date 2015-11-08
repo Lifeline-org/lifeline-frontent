@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="www.frebsite.nl" />
+	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+	
+	<title>Lifeline</title>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="slidemenu/dist/core/css/jquery.mmenu.css" />
+	<link type="text/css" rel="stylesheet" href="slidemenu/dist/addons/css/jquery.mmenu.dragopen.css" />
+	<link href="css/reportstyles.css" rel="stylesheet">
+
+</head>
+	
+<body>
+	<div id="page">
+		<div class="header Fixed">
+			<a href="#menu"></a>
+			Lifeline
+		</div>
+		<div class="content" id="content">
+			<h2>Report</h2>
+		
+			<div class="radio">
+			  <label><input type="radio" name="choice" id="drugChoice">Drug</label>
+			</div>
+			<div class="radio">
+			  <label><input type="radio" name="choice" id="gangChoice">Gang</label>
+			</div>
+			<div class="radio">
+			  <label><input type="radio" name="choice" id="sexChoice">Sex</label>
+			</div>
+			<div class="radio">
+			  <label><input type="radio" name="choice" id="violenceChoice">Violence</label>
+			</div>
+			<div class="clear"></div>
+			
+			<button type="button" id="currentLoc">Use Current Location</button>
+			<div id="foundLocation"></div>
+			
+			<button type="button" id="enterAddress">Enter Address</button>
+			<div id="addressForm">
+				<input type="text" id="addressQuery" placeholder="Enter Complete Address">
+				<button type="submit" id="submitAddress">Submit</button>
+			</div>
+			<div class="clear"></div>
+			<div class="clear"></div>
+			
+			<input type="text" class="form-control" id="compHeadline" placeholder="Headline">
+			<div class="clear"></div>
+			<input type="text" class="form-control" id="compContent" placeholder="Describe what you saw">
+			<div class="clear"></div>
+			<div class="clear"></div>
+			
+		   <button type="submit" class="btn btn-default" id="submitReport">Submit</button>
+		</div>
+		<div class="footer Fixed">
+			
+		</div>
+		<nav id="menu">
+			<ul>
+				<li><a href="http://localhost/LifelineApp/index.html">Home</a></li>
+				<li><a href="http://localhost/LifelineApp/about.html">About</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="slidemenu/dist/core/js/jquery.mmenu.min.js"></script>
+	<script type="text/javascript" src="slidemenu/dist/addons/js/jquery.mmenu.dragopen.min.js"></script>
+	<script type="text/javascript" src="slidemenu/dist/addons/js/jquery.mmenu.fixedelements.min.js"></script>
+	
+	<!-- Google Maps, Places, and Visualization API -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXNd53zmsiIIqVPVQbMEM4p0nU1qNsc3Y&libraries=places,visualization"></script>
+	
+	<!-- Own js file -->
+	<script type="text/javascript" src="js/slidemenu.js"></script>
+	<script type="text/javascript" src="js/report.js"></script>
+</body>
+  
+</html>
